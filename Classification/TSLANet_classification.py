@@ -388,7 +388,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_id', type=str, default='TEST')
-    parser.add_argument('--data_path', type=str, default=r'C:\Emad\datasets\UCR_2015\UCR_2015_preprocessed\OSULeaf')
+    parser.add_argument('--data_path', type=str, default=r'data/hhar')
 
     # Training parameters:
     parser.add_argument('--num_epochs', type=int, default=100)
