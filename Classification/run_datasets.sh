@@ -4,7 +4,7 @@ do
   --data_path set/the/path/here \
   --emb_dim 128 \
   --depth 2 \
-  --model_id TSLANet_UCR_withPretraining_noNorm \
+  --model_id UCR_datasets \
   --load_from_pretrained True
 done
 
@@ -16,7 +16,7 @@ do
   --data_path set/the/path/here \
   --emb_dim 256 \
   --depth 3 \
-  --model_id TSLANet_UCR_withPretraining_noNorm \
+  --model_id UEA_datasets \
 
 done
 
@@ -27,5 +27,5 @@ do
   --data_path set/the/path/here \
   --emb_dim 256 \
   --depth 2 \
-  --model_id TSLANet_$dataPath
+  --model_id other_datasets
 done
