@@ -3,7 +3,7 @@
 
 ## Abstract
 <p align="center">
-<img src="misc/TSLANet.png" width="400" class="center">
+<img src="misc/TSLANet.png" width="600" class="center">
 </p>
 
 Time series data, characterized by its intrinsic long and short-range dependencies, poses a unique challenge across analytical applications. While Transformer-based models excel at capturing long-range dependencies, they face limitations in noise sensitivity, computational efficiency, and overfitting with smaller datasets. In response, we introduce a novel <b>T</b>ime <b>S</b>eries <b>L</b>ightweight <b>A</b>daptive <b>Net</b>work (<b>TSLANet</b>), as a universal convolutional model for diverse time series tasks. Specifically, we propose an Adaptive Spectral Block, harnessing Fourier analysis to enhance feature representation and to capture both long-term and short-term interactions while mitigating noise via adaptive thresholding. Additionally, we introduce an Interactive Convolution Block and leverage self-supervised learning to refine the capacity of TSLANet for decoding complex temporal patterns and improve its robustness on different datasets. Our comprehensive experiments demonstrate that TSLANet outperforms state-of-the-art models in various tasks spanning classification, forecasting, and anomaly detection, showcasing its resilience and adaptability across a spectrum of noise levels and data sizes.
