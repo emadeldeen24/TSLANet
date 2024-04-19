@@ -181,8 +181,8 @@ class TSLANet(nn.Module):
         x = rearrange(x, 'b m n p -> (b m) n p')
         x = self.input_layer(x)
 
-        for gf_blk in self.gf_blocks:
-            x = gf_blk(x)
+        for tsla_blk in self.tsla_blocks:
+            x = tsla_blk(x)
 
         outputs = self.out_layer(x.reshape(B * M, -1))
         outputs = rearrange(outputs, '(b m) l -> b l m', b=B)
