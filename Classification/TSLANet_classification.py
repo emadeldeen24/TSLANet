@@ -163,7 +163,7 @@ class TSLANet(L.LightningModule):
 
         dpr = [x.item() for x in torch.linspace(0, args.dropout_rate, args.depth)]  # stochastic depth decay rule
 
-        self.gf_blocks = nn.ModuleList([
+        self.tsla_blocks = nn.ModuleList([
             TSLANet_layer(dim=args.emb_dim, drop=args.dropout_rate, drop_path=dpr[i])
             for i in range(args.depth)]
         )
@@ -192,8 +192,8 @@ class TSLANet(L.LightningModule):
         x_masked, _, self.mask, _ = random_masking_3D(x, mask_ratio=args.masking_ratio)
         self.mask = self.mask.bool()  # mask: [bs x num_patch x n_vars]
 
-        for gf_blk in self.gf_blocks:
-            x_masked = gf_blk(x_masked)
+        for tsla_blk in self.tsla_blocks:
+            x_masked = tsla_blk(x_masked)
 
         return x_masked, x_patched
 
