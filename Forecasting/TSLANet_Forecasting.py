@@ -145,7 +145,7 @@ class TSLANet(nn.Module):
 
         dpr = [x.item() for x in torch.linspace(0, args.dropout, args.depth)]  # stochastic depth decay rule
 
-        self.gf_blocks = nn.ModuleList([
+        self.tsla_blocks = nn.ModuleList([
             TSLANet_layer(dim=args.emb_dim, drop=args.dropout, drop_path=dpr[i])
             for i in range(args.depth)]
         )
@@ -162,8 +162,8 @@ class TSLANet(nn.Module):
         self.mask = self.mask.bool()  # mask: [bs x num_patch]
         xb_mask = self.input_layer(xb_mask)
 
-        for gf_blk in self.gf_blocks:
-            xb_mask = gf_blk(xb_mask)
+        for tsla_blk in self.tsla_blocks:
+            xb_mask = tsla_blk(xb_mask)
 
         return xb_mask, self.input_layer(x_patched)
 
