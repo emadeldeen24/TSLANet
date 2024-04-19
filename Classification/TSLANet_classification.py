@@ -202,8 +202,8 @@ class TSLANet(L.LightningModule):
         x = x + self.pos_embed
         x = self.pos_drop(x)
 
-        for gf_blk in self.gf_blocks:
-            x = gf_blk(x)
+        for tsla_blk in self.tsla_blocks:
+            x = tsla_blk(x)
 
         x = x.mean(1)
         x = self.head(x)
