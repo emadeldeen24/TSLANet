@@ -14,10 +14,10 @@ Time series data, characterized by its intrinsic long and short-range dependenci
 ## Citation
 If you found this work useful for you, please consider citing it.
 ```
-@article{tslanet,
+@inproceedings{tslanet,
   title     = {TSLANet: Rethinking Transformers for Time Series Representation Learning},
   author    = {Eldele, Emadeldeen and Ragab, Mohamed and Chen, Zhenghua and Wu, Min and Li, Xiaoli},
-  journal   = {arXiv preprint arXiv:2404.08472},
+  booktitle = {International Conference on Machine Learning},
   year      = {2024},
 }
 ```
