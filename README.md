@@ -1,6 +1,8 @@
 # TSLANet: Rethinking Transformers for Time Series Representation Learning [[Paper](https://arxiv.org/pdf/2404.08472.pdf)] [[Cite](#citation)]
 #### *by: Emadeldeen Eldele, Mohamed Ragab, Zhenghua Chen, Min Wu,and Xiaoli Li*
 
+### This work is accepted in ICML 2024!
+
 ## Abstract
 <p align="center">
 <img src="misc/TSLANet.png" width="600" class="center">
