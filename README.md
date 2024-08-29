@@ -29,7 +29,7 @@ If you found this work useful for you, please consider citing it.
   title     = {TSLANet: Rethinking Transformers for Time Series Representation Learning},
   author    = {Eldele, Emadeldeen and Ragab, Mohamed and Chen, Zhenghua and Wu, Min and Li, Xiaoli},
   booktitle = {International Conference on Machine Learning},
-  year      = {2024},
+  year      = {2024}
 }
 ```
 
